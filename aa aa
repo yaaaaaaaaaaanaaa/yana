@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="container">
+        <h1>じゃんけんゲーム</h1>
+        <div class="choices">
+            <img src="https://research.image.itmedia.co.jp/wp-content/uploads/2022/05/1653914934_22850644_s.jpg" alt="グー" onclick="playGame('グー')">
+            <img src="https://free-materials.com/adm/wp-content/uploads/2022/10/0adpTSC_0119-.jpg" alt="チョキ" onclick="playGame('チョキ')">
+            <img src="https://free-materials.com/adm/wp-content/uploads/2022/10/0adpTSC_0120-.jpg" alt="パー" onclick="playGame('パー')">
+        </div>
+        <div class="result">
+            <p id="userChoice"></p>
+            <p id="computerChoice"></p>
+            <p id="gameResult"></p>
+        </div>
+        <div class="win-image" style="display:none;">
+            <img id="winImage" src="https://cdn.discordapp.com/attachments/1122675524762877952/1311871620704370828/2023-11-06_114218.png?ex=674a6f27&is=67491da7&hm=30cacf61513a75bacb29f166bc8fa90fea9c9007cf85f7a5a6999d5454ec54e0&" alt="勝利">
+        </div>
+        <div class="lose-image" style="display:none;">
+            <img id="loseImage" src="https://cdn.discordapp.com/attachments/1122675524762877952/1311871927211786291/2023-11-06_114158.png?ex=674a6f70&is=67491df0&hm=35a3ee54f6b467d5c2a3caa6e6f2d56241d979f42c594d0c7cdd7452081e8958&" alt="敗北">
+        </div>
+        <div class="retry" style="display:none;">
+            <button onclick="retryGame()">もう一回</button>
+        </div>
+        <div class="restart" style="display:none;">
+            <button onclick="retryGame()">もう一度じゃんけんをする</button>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
